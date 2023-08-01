@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/verify.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Verify Certificate</h1>
+        <form method="post" action="{% url 'verify_certificate' %}">
+    
+                <div class="form-group">
+                   <input type="text" placeholder="Enter Certificate ID*" class="form-control" id="certificate_code" name="certificate_code" required>
+                   <h6>The Certificate ID can be found at the bottom of each certificate.</h6>
+                </div>
+                <button type="submit" class="btn-primary"><p>Validate</p></button>
+        </form>
+    </div>
+</body>
+</html>
